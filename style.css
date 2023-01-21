@@ -1,0 +1,44 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: .4s ease;
+    transform: translateX(10px);
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    transition: .4s ease;
+    background-color: blue;
+}
+
+.box:hover {
+    rotate: 40deg;
+}
+
+.item:hover {
+    transform: translate(10px, 20px);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+@media (max-width:400px) {
+    .box {
+        background-color: blue;
+        width: 200px;
+    }
+
+    .box:hover {
+        rotate: 100deg;
+    }
+}
+
+@media (max-width:300px) {
+    h1 {
+        font-size: 20px;
+    }
+}
